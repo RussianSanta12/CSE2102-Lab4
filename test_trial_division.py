@@ -13,13 +13,15 @@ class TestTrialDivision(unittest.TestCase):
         self.assertEqual(trial_division(100), [1, 2, 2, 5, 5])
 
     def test_one(self):
-        self.assertEqual(trial_division(1), [1])
+        self.assertEqual(trial_division(1), "not a factor or prime")
 
     def test_zero(self):
-        self.assertEqual(trial_division(0), [0])
+        self.assertEqual(trial_division(0), "not a factor or prime")
 
     def test_negative(self):
-        self.assertEqual(trial_division(-12), [-12])
+        self.assertEqual(trial_division(-12), "not a factor or prime")
 
 if __name__ == "__main__":
     unittest.main()
+
+#to test the code run python test_trial_division.py
