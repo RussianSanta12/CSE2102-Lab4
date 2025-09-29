@@ -6,7 +6,7 @@ def trial_division(n):
    factors = [1]
    temp = n
    if n <= 1:
-      return [n]
+      return "not a factor or prime"
 
    while n % 2 == 0:
       factors.append(2)
@@ -44,3 +44,5 @@ def factors():
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0')
+
+# To run the server, use the command: python my_server.py
